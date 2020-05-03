@@ -1,4 +1,4 @@
-from jinja_test import create_app
+from jinja import create_app
 
 app = create_app()
 
