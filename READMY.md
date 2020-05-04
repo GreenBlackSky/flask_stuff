@@ -8,5 +8,7 @@ Personal experiments with basic backend development
 * WTForms
 * auth
 * redis
-* docker
+* terminal commands
 * vue
+* setup
+* docker

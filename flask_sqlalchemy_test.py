@@ -13,12 +13,7 @@ connection_data = {
 DB_URL = "{type}://{user}:{password}@{host}:{port}/{database}".format(**connection_data)
 
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-
-
+db = SQLAlchemy()
 class User(db.Model):
     __tablename__ = 'users'
 
@@ -31,17 +26,25 @@ class User(db.Model):
         self.last_name = last_name
 
 
-db.create_all()
+def create_app():
+    app = Flask(__name__)
+    app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+    db.init_app(app)
+    with app.app_context():
+        db.create_all()
+        jon = User('Jon', 'Odin')
+        db.session.add(jon)
+        db.session.commit()
+
+    @app.route('/')
+    def hello():
+        return "Hello, world"
+
+    return app
 
 
-jon = User('Jon', 'Odin')
-
-
-db.session.add(jon)
-db.session.commit()
-
-
-@app.route('/')
-def hello():
-    return "Hello, world"
-
+if __name__ == '__main__':
+    app = create_app()
+    app.run(host='0.0.0.0')

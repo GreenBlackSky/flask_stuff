@@ -7,9 +7,7 @@ db = SQLAlchemy()
 
 
 from .auth import bp as auth_bp
-# from .tree import bp as tree_bp
 from .documents import bp as docs_bp
-# from .calendar import bp as calendar_bp
 
 def create_app() -> Flask:
     """Create new app."""
