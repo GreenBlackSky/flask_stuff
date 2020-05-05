@@ -1,6 +1,6 @@
 # What do we have here?!
 
-Personal experiments with basic backend development
+Collection of personal experiments with basic backend development.
 * clan_old - some basic flask app
 * psycopg
 * sqlalchemy
@@ -8,7 +8,9 @@ Personal experiments with basic backend development
 * WTForms
 * auth
 * redis
-* terminal commands
+* method view
+* assets
 * vue
 * setup
 * docker
+* pgbouncer

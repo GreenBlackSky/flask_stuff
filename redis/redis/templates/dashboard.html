@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    {% for key, value in session.items() %}
+        <div>{{ key }} = {{ value }}</div>
+    {% endfor %}
+
+    <a href="{{ url_for('main_bp.add_item') }}">Add item.</a>
+    <a href="{{ url_for('main_bp.remove_item') }}">Remove item.</a>
+
+{% endblock %}

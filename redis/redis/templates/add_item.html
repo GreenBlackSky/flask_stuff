@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% import 'macros.html' as macros %}
+
+{% block content %}
+<div class="formwrapper">
+    <h2 class="title">Add item</h2>
+    <form method="POST" action="{{ url_for('main_bp.add_item') }}">
+        {{ macros.render_field(form.key) }}
+        {{ macros.render_field(form.value) }}
+        {{ form.submit }}
+        {{ form.hidden_tag() }}
+    </form>
+</div>
+{% endblock %}
