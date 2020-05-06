@@ -1,4 +1,4 @@
-from redis import create_app
+from redis_test_app import create_app
 
 
 app = create_app()

@@ -21,12 +21,12 @@ def add_item():
         return redirect(url_for('main_bp.dashboard'))
     return render_template(
         'add_item.html',
-        title='Add item to redis session.'
+        title='Add item to redis session.',
         form=form
     )
 
 
-@bp.route('/remove_item'):
+@bp.route('/remove_item')
 def remove_item():
     form = RemoveItemForm()
     if form.validate_on_submit():
