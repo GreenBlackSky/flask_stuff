@@ -8,7 +8,6 @@ Collection of personal experiments with basic backend development.
 * WTForms
 * auth
 * redis
-* configs
 * method view
 * assets
 * vue
