@@ -1,6 +1,5 @@
 from flask import Flask
-from flask_assets import Environment
-from .assets import compile_assets
+from flask_assets import Environment, Bundle
 
 
 assets = Environment()
@@ -13,11 +12,7 @@ def create_app():
     assets.init_app(app)
 
     with app.app_context():
-        from .admin import admin_routes
-        from .main import main_routes
-
-        app.register_blueprint(admin_routes.admin_bp)
-        app.register_blueprint(main_routes.main_bp)
-        compile_assets(assets)
+        from . import routes
+        app.register_blueprint(routes.bp)
 
         return app

@@ -4,18 +4,12 @@
 <head>
   {% include 'meta.html' %}
   {% block pagestyles %}{% endblock %}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,500" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/sus7rlu.css">
 </head>
 
-<body class="{{template}}">
+{% include 'navigation.html' %}
 
+<body>
   {% block content %}{% endblock %}
-
-  <!-- Scripts -->
-  <script src="{{ url_for('static', filename='dist/js/main.min.js') }}"></script>
-  {% block additionalscripts %}{% endblock %}
 </body>
 
 </html>

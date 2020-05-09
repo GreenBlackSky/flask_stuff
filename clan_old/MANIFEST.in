@@ -1,4 +1,0 @@
-graft clan/static
-graft clan/templates
-global_exclude *.pyc
-recursive_exclude .mypy_cache
