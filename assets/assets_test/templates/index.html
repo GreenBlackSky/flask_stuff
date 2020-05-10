@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <p>{{ body }}</p>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"/>
+    <p id="doc_body">{{ body }}</p>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {% endblock %}

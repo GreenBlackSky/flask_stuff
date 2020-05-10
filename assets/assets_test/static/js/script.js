@@ -1,7 +1,1 @@
-$(document).ready(
-    function() {
-        $("p").click(
-            function(event){$(this).hide();}
-        );
-    }
-);
+alert("Hello, js asset");
