@@ -8,7 +8,7 @@ Collection of personal experiments with basic backend development.
 * auth - handling user authetification with flask and flask-auth
 * redis - using redis to power user session
 * assets - adding static assets like js and css to flask web-page
-* method view - using flask MethodView to separete processing requests of different types
+* method_view - using flask MethodView to separete processing requests of different types
 * vue - handling frontend with vue
 * docker - packing app into docker containers
 * pgbouncer - optimizing requests to postgresql with pgbouncer
