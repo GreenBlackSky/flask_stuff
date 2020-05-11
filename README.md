@@ -9,6 +9,7 @@ Collection of personal experiments with basic backend development.
 * redis - using redis to power user session
 * assets - adding static assets like js and css to flask web-page
 * method_view - using flask MethodView to separete processing requests of different types
+* jquery - use jquery to pass data between server and web-page
 * vue - handling frontend with vue
 * docker - packing app into docker containers
 * pgbouncer - optimizing requests to postgresql with pgbouncer
