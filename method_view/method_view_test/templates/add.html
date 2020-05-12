@@ -4,11 +4,12 @@
 {% block content %}
 <div class="formwrapper">
     <h2 class="title">Add numbers</h2>
-    <form method="POST" action="{{ url_for('add') }}">
+    <form method="POST" action="{{ url_for('add_view') }}">
         {{ macros.render_field(form.num1) }}
         {{ macros.render_field(form.num2) }}
         {{ form.submit }}
         {{ form.hidden_tag() }}
     </form>
+    <div> Result: {{ result }} </div>
 </div>
 {% endblock %}
