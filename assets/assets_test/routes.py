@@ -1,15 +1,7 @@
-from flask import Blueprint, render_template
+from flask import current_app as app, render_template
 
 
-bp = Blueprint(
-    'main_bp',
-    __name__,
-    template_folder='templates',
-    static_folder='static'
-)
-
-
-@bp.route('/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def home():
     return render_template(
         'index.html',
@@ -18,7 +10,7 @@ def home():
     )
 
 
-@bp.route('/about', methods=['GET'])
+@app.route('/about', methods=['GET'])
 def about():
     return render_template(
         'index.html',
@@ -27,7 +19,7 @@ def about():
     )
 
 
-@bp.route('/etc', methods=['GET'])
+@app.route('/etc', methods=['GET'])
 def etc():
     return render_template(
         'index.html',
