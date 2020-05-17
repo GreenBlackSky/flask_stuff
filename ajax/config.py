@@ -6,3 +6,4 @@ class Config:
     FLASK_DEBUG = 1
 
     TEMPLATES_FOLDER = 'templates'
+    STATIC_FOLDER = 'static'

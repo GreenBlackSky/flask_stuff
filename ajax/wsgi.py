@@ -1,4 +1,4 @@
-from method_view_test import create_app
+from ajax_test import create_app
 
 
 if __name__ == '__main__':
