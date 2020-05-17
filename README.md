@@ -7,7 +7,7 @@ Collection of personal experiments with basic backend development.
 * WTForms - creating and processing web forms with Flask and WTForms
 * auth - handling user authetification with flask and flask-auth
 * redis - using redis to power user session
-* assets - adding static assets like js and css to flask web-page (TODO: pack assets)
+* assets - adding static assets like js and css to flask web-page
 * method_view - using flask MethodView to separete processing requests of different types (TODO: dispatch request)
 * jquery - use jquery to pass data between server and web-page
 * vue - handling frontend with vue
