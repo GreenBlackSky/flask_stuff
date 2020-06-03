@@ -10,6 +10,7 @@ Collection of personal experiments with basic backend development.
 * assets - adding static assets like js and css to flask web-page
 * method_view - using flask MethodView to separete processing requests of different types
 * ajax - use javascript to pass data between server and web-page
+* sse - connect web page and server with Flask-SSE
 * vue - handling frontend with vue
 * docker - packing app into docker containers
 * pgbouncer - optimizing requests to postgresql with pgbouncer
