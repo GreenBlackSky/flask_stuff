@@ -13,3 +13,5 @@ Collection of personal experiments with basic backend development.
 * vue - handling frontend with vue
 * docker - packing app into docker containers
 * pgbouncer - optimizing requests to postgresql with pgbouncer
+* celery - using celery to queue tasks
+* kubenetes - clustring app and all services in containers
