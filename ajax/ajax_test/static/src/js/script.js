@@ -23,7 +23,7 @@ function submit_numbers() {
         let result = await response.json()['result'];
         alert(result);
     else {
-        alert('HTTP error ' + response.status;
+        alert('HTTP error ' + response.status);
     }
 
 };
