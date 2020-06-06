@@ -13,6 +13,6 @@ Collection of personal experiments with basic backend development.
 * sse - connect web page and server with Flask-SSE
 * vue - handling frontend with vue
 * docker - packing app into docker containers
+* kubenetes - clustring app and all services in containers
 * pgbouncer - optimizing requests to postgresql with pgbouncer
 * celery - using celery to queue tasks
-* kubenetes - clustring app and all services in containers

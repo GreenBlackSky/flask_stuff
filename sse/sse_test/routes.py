@@ -9,5 +9,5 @@ def index():
 
 @app.route('/send')
 def stream():
-    sse.publish({"message": "Hello"}, type='greeting')
+    sse.publish({"message": "Hello"}, type='messege')
     return "message sent"
