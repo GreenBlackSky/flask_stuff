@@ -1,10 +1,10 @@
 
-function(event) greetingsListner {
+function greetingsListener(event) {
     let data = JSON.parse(event.data);
     alert("The server says " + data.message);
 }
 
-function(event) errorHandler {
+function errorHandler(event) {
     alert("Failed to connect to event stream.");
 }
 
