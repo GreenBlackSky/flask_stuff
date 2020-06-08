@@ -5,6 +5,7 @@ html, body {
 }
 
 textarea {
+    resize: none;
     margin: 0 auto;
     border: 3px solid;
     width: 90%;
@@ -15,5 +16,5 @@ input {
     margin: 0 auto;
     border: 3px solid green;
     width: 90%;
-    height: 10%;
+    height: 20px;
 }
