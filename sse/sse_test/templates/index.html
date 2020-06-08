@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Flask-SSE test</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dst/css/style.min.css') }}"/>
     </head>
     <body>
-        <h1>Flask-SSE test</h1>
+        <textarea class="output" id="output" readonly></textarea>
+        <input type="text" id="input" name="input" onkeydown="keyHandler(event)">
         <script type="text/javascript" src="{{ url_for('static', filename='dst/js/script.min.js') }}"></script>
     </body>
 </html>

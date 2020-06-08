@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+textarea {
+    margin: 0 auto;
+    border: 3px solid;
+    width: 90%;
+    height: 80%;
+}
+
+input {
+    margin: 0 auto;
+    border: 3px solid green;
+    width: 90%;
+    height: 10%;
+}
