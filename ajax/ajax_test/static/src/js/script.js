@@ -1,11 +1,8 @@
-function submit_numbers() {
-
-    let num_1 = document.getElementById("num1").value;
-    let num_2 = document.getElementById("num2").value;
+async function submit_numbers() {
 
     let entry = {
-        num1: num_1,
-        num2: num_2
+        num1: document.getElementById("num1").value,
+        num2: document.getElementById("num2").value
     };
 
     let response = await fetch(
@@ -20,9 +17,9 @@ function submit_numbers() {
     );
 
     if(response.ok) {
-        let result = await response.json()['result'];
-        alert(result);
-    else {
+        let responseJSON = await response.json();
+        alert('Result is: ' + responseJSON["result"]);
+    } else {
         alert('HTTP error ' + response.status);
     }
 
