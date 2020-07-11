@@ -17,5 +17,7 @@ Collection of personal experiments with basic backend development.
 * ajax - use javascript to pass data between server and web-page
 * sse - connect web page and server with Flask-SSE
 
+* flutter - using flutter as front end
+
 * pgbouncer - optimizing requests to postgresql with pgbouncer
 * celery - using celery to queue tasks
